@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h4>Articles</h4>
+<hr>
+<div>
+	<ul>
+		{% for page in pages %}
+		<li><a href="{{ page.route }}">{{page.title}}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+
+{% endblock %}
